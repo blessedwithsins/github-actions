@@ -8,3 +8,5 @@ jobs:
       steps:
         - name: Welcome Job
           run: echo " my first GitHub Action Job"
+        - name: Second Job
+          run: echo "/etc/hosts"
