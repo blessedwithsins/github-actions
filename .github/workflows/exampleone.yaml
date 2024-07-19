@@ -14,4 +14,5 @@ jobs:
           run: |
             echo "/etc/hosts"
             date
-            
+        - name: Generate ASCII Artwork
+          run: cowsay -f dragon "Run for cover, I am a dragon....RAWR" >> dragon.txt
