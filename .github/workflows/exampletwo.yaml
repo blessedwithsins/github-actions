@@ -9,5 +9,5 @@ jobs:
         - name: Checkout repo
           uses: actions/checkout@v4
         - name: Use environment variables 
-          run: echo ${{ env.CODE_NAME }}
+          run: echo ${{ vars.CODE_NAME }}
         
