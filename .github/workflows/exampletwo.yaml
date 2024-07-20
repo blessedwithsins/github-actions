@@ -1,0 +1,15 @@
+name: My Second Workflow/Exploring Variables and Secrets
+
+on: push
+
+jobs:
+    first_job: 
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repo
+          uses: actions/checkout@v4
+        - name: Use environment variables 
+          env:
+            CODE_NAME: wardaddy
+          run: echo $CODE_NAME
+        
