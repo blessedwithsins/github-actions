@@ -9,7 +9,5 @@ jobs:
         - name: Checkout repo
           uses: actions/checkout@v4
         - name: Use environment variables 
-          env:
-            CODE_NAME: wardaddy
-          run: echo $CODE_NAME
+          run: echo ${{ env.CODE_NAME }}
         
